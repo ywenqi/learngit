@@ -1,0 +1,302 @@
+PL_LOG_STORE:sram->sig value 0xABCD1234!
+ramrom delsel: 0x06C4E4F3
+bandgap ref vol: 0x302012A8
+Pll init start...
+Pll init Done!
+[RGU] rst from: pl
+[RGU] STA from reg:       0x40000000
+[RGU] MODE:               0x25
+[RGU] STA:                0x40000000
+[RGU] LENGTH:             0xFFE0
+[RGU] INTERVAL:           0xFFF
+[RGU] SWSYSRST:           0x8000
+[RGU] LATCH_CTL:          0x21E71
+[RGU] LATCH_CTL2:         0x0
+[RGU] NONRST_REG:         0x0
+[RGU] NONRST_REG2:        0x24002000
+[RGU] REQ_MODE:           0x3F0032
+[RGU] REQ_IRQ_EN:         0x3B0030
+[RGU] DEBUG_CTL:          0x200F1
+[RGU] parse g_rgu_status: 2 (0x2)
+[RGU] Set NONRST_REG to 0x40000000
+[RGU] mtk_wdt_mode_config mode value=34, tmp:22000034
+[RGU] mtk_wdt_mode_config mode value=7D, tmp:2200007D
+[RGU] mtk_wdt_reset_deglitch_enable: MTK_WDT_RSTDEG_EN1(8000A357), MTK_WDT_RSTDEG_EN2(800067D2)
+[RGU] rgu_update_reg: 0, bits: 0xC000, addr: 0x10007040, val: 0x200F1
+[RGU] rgu_update_reg: 0, bits: 0x300, addr: 0x100070A0, val: 0xFF
+[RGU] mtk_wdt_pre_init: MTK_WDT_DEBUG_CTL(0x200F1)
+[RGU] mtk_wdt_pre_init: MTK_WDT_DEBUG_CTL2(0xFF)
+[RGU] mtk_wdt_pre_init: MTK_WDT_LATCH_CTL(0x21E71)
+[RGU] mtk_wdt_pre_init: MTK_WDT_REQ_MODE(3F0032), MTK_WDT_REQ_IRQ_EN(3B0030)
+[PWRAP] si_en_sel = 0, si_ck_sel = 0, si_sample_ctrl = 0, rdata = 96A9
+[PWRAP] si_en_sel = 0, si_ck_sel = 1, si_sample_ctrl = 20, rdata = 5AA5, Pass
+[PWRAP] InitSiStrobe (6, 6, 4804) Data Boundary Is Found !!
+[PWRAP] SI Strobe Calibration For PMIC 0 Done, (40, 6)
+[PWRAP] Read Test pass, return_value=0x0
+[PWRAP] Write Test pass
+[PWRAP] RECORD_CMD0:  0x152A (Last one command addr)
+[PWRAP] RECORD_WDATA0:0x19 (Last one command wdata)
+[PWRAP] RECORD_CMD1:  0x152A (Last second command addr)
+[PWRAP] RECORD_WDATA1:0x2D (Last second command wdata)
+[PWRAP] RECORD_CMD2:  0x196C (Last third command addr)
+[PWRAP] RECORD_WDATA2:0x0 (Last third command wdata)
+[PWRAP] init pass, ret=0.
+
+DATE_CODE_YY:0, DATE_CODE_WW:0
+[SegCode] Segment Code:0x80, PROJECT_CODE:0x0, FAB_CODE:0x0, RW_STA:0x0, CTL:0x0, DCM:0x4
+[PMIC]Preloader Start
+[PMIC]MT6357 CHIP Code = 0x5730, mrv=1
+[PMIC]POWER_HOLD :0x1
+[PMIC]TOP_RST_STATUS[0x152]=0x48
+[PMIC]PONSTS[0xC]=0x0
+[PMIC]POFFSTS[0xE]=0x400
+[PMIC]PGSTATUS0[0x14]=0xFFFE
+[PMIC]PSOCSTATUS[0x16]=0x0
+[PMIC]BUCK_OC_SDN_STATUS[0x1434]=0x0
+[PMIC]BUCK_OC_SDN_EN[0x1444]=0x1F1F
+[PMIC]THERMALSTATUS[0x18]=0x0
+[PMIC]STRUP_CON4[0xA1C]=0x0
+[PMIC]TOP_RST_MISC[0x14C]=0x1204
+[PMIC]TOP_CLK_TRIM[0x38E]=0x6AC0
+latch VPROC 800000 uV
+latch VSRAM_PROC 900000 uV
+latch VSRAM_OTHERS 900000 uV
+latch VCORE 800000 uV
+latch VMODEM 800000 uV
+[pmic_check_rst] DDLO_RSTB
+[pmic_check_rst] AP Watchdog
+[PMIC]just_rst = 0
+No EFUSE SW Load
+battery exists
+[PMIC]disable usbdl wo battery
+[PMIC]pmic_wdt_set Reg[0x14C]=0x1225
+[rt5738_driver_probe]
+[rt5738_hw_component_detect] exist = 0, Chip ID = A801
+[rt5738_driver_probe] PL rt5738_vdd2 is not exist
+[rt5738_hw_component_detect] exist = 1, Chip ID = 0
+[rt5738_driver_probe] PL g_rt5738_1_hw_exist=1, g_rt5738_driver_ready=1
+[hl7593_driver_probe]
+[hl7593_read_interface] Reg[3]=0xA8
+[hl7593_read_interface] val=0xA8
+[hl7593_read_interface] Reg[4]=0x1
+[hl7593_read_interface] val=0x1
+[hl7593_read_interface] Reg[5]=0x81
+[hl7593_read_interface] val=0x1
+PGOOD = 1, chip_id = 43009
+[hl7593_hw_component_detect] exist = 1, Chip ID = A801
+hl7593_vdd2_hw_init
+[hl7593_read_interface] Reg[0]=0xD4
+[hl7593_read_interface] val=0xD4
+[0x0]=0xD4 [hl7593_read_interface] Reg[1]=0xD4
+[hl7593_read_interface] val=0xD4
+[0x1]=0xD4 [hl7593_read_interface] Reg[2]=0x83
+[hl7593_read_interface] val=0x83
+[0x2]=0x83 [hl7593_read_interface] Reg[3]=0xA8
+[hl7593_read_interface] val=0xA8
+[0x3]=0xA8 [hl7593_read_interface] Reg[4]=0x1
+[hl7593_read_interface] val=0x1
+[0x4]=0x1 [hl7593_read_interface] Reg[5]=0x81
+[hl7593_read_interface] val=0x81
+[0x5]=0x81 [hl7593_driver_probe] PL g_hl7593_0_hw_exist=1, g_hl7593_driver_ready=1
+[hl7593_read_interface] Reg[3]=0x0
+[hl7593_read_interface] val=0x0
+[hl7593_read_interface] Reg[4]=0x0
+[hl7593_read_interface] val=0x0
+[hl7593_read_interface] Reg[5]=0x81
+[hl7593_read_interface] val=0x1
+PGOOD = 1, chip_id = 0
+[hl7593_hw_component_detect] exist = 0, Chip ID = 0
+[hl7593_driver_probe] PL hl7593_vddq is not exist
+[hl7593_set_voltage] id = 0, set_val = 1125000 
+[hl7593_read_interface] Reg[0]=0xD4
+[hl7593_read_interface] val=0x54
+[hl7593_get_voltage] id = 0, get_val = 1125000 
+hl7593_vdd2=1125000 uV
+[fan53526_driver_probe]
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 365: id=3,addr: 60, transfer error
+[I2C] 371: I2C_ACKERR
+[I2C] 235: I2C structure:
+[I2C] Clk=24960,Id=3,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 238: base address 0x1100F000
+[I2C] 259: I2C register:
+[I2C] SLAVE_ADDR=C0,INTR_MASK=1F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=A,TIMING=418,LTIMING=118,START=2,FIFO_STAT=1
+[I2C] IO_CONFIG=1A3,HS=0,DEBUGSTAT=0,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 924: write_read 0x10001 bytes fails,ret=-121.
+[fan53526_hw_component_detect] exist = 0, Chip ID = 304
+[fan53526_driver_probe] PL fan53526_vdd2 is not exist
+[fan53526_hw_component_detect] exist = 0, Chip ID = 0
+[fan53526_driver_probe] PL fan53526_vddq is not exist
+register vs1 OK
+register vmodem OK
+register vcore OK
+register vproc OK
+register vpa OK
+register vsram_others OK
+register vsram_proc OK
+register vdram OK
+[PMIC]Init done
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(0) DDR(0) DIV(385) DS(0) RS(0)
+[SD0] SET_CLK(260kHz): SCLK(259kHz) MODE(2) DDR(1) DIV(192) DS(0) RS(0)
+[SD0] Size: 29824 MB, Max.Speed: 52000 kHz, blklen(512), nblks(61079552)
+[SD0] Initialized, eMMC45
+[SD0] SET_CLK(52000kHz): SCLK(50000kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+[PLFM] Init Boot Device: OK(0)
+metadata.slot_info[0].priority = 15, 15
+metadata.slot_info[0].retry = 7, 7
+[AB] Current boot: Preloader_a
+[AB] ab_suffix: _a, ab_retry: 7
+[AB] boot_success is 1!
+[PLFM] Init PWRAP: OK(0)
+[PLFM] Init PMIC: OK(0)
+[PLFM] chip_hw_ver[CA01], chip_sw_ver[1]
+
+[BLDR] Build Time: 20230310-101945
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 0
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=1 1 1 1 1 1 1
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 1
+clk_buf_dump_clkbuf_log DCXO_CW00/02/11/13/14/15/16/20/top_spi_con1=0x4E1D 3AEE 8000 98E9 82B5 A2AA 9455 11 0
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x44A/0/44A/1
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x78C/100/78A/100/3
+[RTC]enable_dcxo first con = 0x486, osc32con = 0xDE75, sec = 0x2541
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=0
+[RTC]get_frequency_meter: input=0x0, ouput=5
+[RTC]get_frequency_meter: input=0x0, ouput=3940
+[RTC]rtc_init#1 powerkey1 = 0xA357, powerkey2 = 0x67D2, without LPD
+[RTC]bbpu = 0x1, con = 0x486, osc32con = 0xDE75, sec = 0x2541, yea = 0xC102
+[RTC]rtc_init#2 powerkey1 = 0xA357, powerkey2 = 0x67D2
+[RTC]rtc_init Writeif_unlock
+[RTC]switch to dcxo
+[RTC]eosc_cali: RG_FQMTR_CKSEL=0x42
+[RTC]get_frequency_meter: input=0xF, ouput=672
+[RTC]eosc_cali: val=0x2A0
+[RTC]get_frequency_meter: input=0x17, ouput=827
+[RTC]eosc_cali: val=0x33B
+[RTC]get_frequency_meter: input=0x13, ouput=750
+[RTC]eosc_cali: val=0x2EE
+[RTC]get_frequency_meter: input=0x15, ouput=788
+[RTC]eosc_cali: val=0x314
+[RTC]get_frequency_meter: input=0x16, ouput=808
+[RTC]eosc_cali: val=0x328
+[RTC]get_frequency_meter: input=0x15, ouput=788
+[RTC]get_frequency_meter: input=0x16, ouput=807
+[RTC]EOSC cali val = 0xDE55
+[RTC]RTC_SPAR0=0x0 
+[RTC]XO_XMODE_M = 1 , XO_EN32K_M = 1
+[RTC]32k-less mode
+[RTC]rtc_2sec_reboot_check 0x2541, without 2sec reboot, type 0x2
+[RTC]rtc_2sec_stat_clear
+[RTC]rtc_lpd_init RTC_CON=0x486
+[PMIC] pmic_init_setting end. v180413
+[MT6357] 1 6,61
+[MT6357] 1 2,45
+[MT6357] 1 1,48
+[MT6357] get volt 5, 61, 900000
+vsram_others = 900000 uV
+[MT6357] get volt 3, 45, 800000
+vproc = 800000 uV
+[MT6357] get volt 6, 61, 900000
+vsram_proc = 900000 uV
+[MT6357] get volt 2, 45, 800000
+vcore = 800000 uV
+[MT6357] get volt 1, 48, 800000
+vmodem = 800000 uV
+[MT6357] 2 6,1
+[MT6357] 2 5,1
+[MT6357] 2 3,1
+[MT6357] 2 2,1
+[MT6357] 2 1,1
+[RGU] EMI_DCS_SUCCESS 0
+[RGU] DVFSRC_SUCCESS 0
+[DDR Reserve] ddr reserve mode not be enabled yet
+[RGU] mtk_wdt_mode_config mode value=34, tmp:22000034
+[RGU] mtk_wdt_mode_config mode value=7D, tmp:2200007D
+[RGU] g_rgu_status: 2 (0x2)
+[RGU] bypass pwrkey: set
+Enter mtk_kpd_gpio_set! 
+after set KP enable: KP_SEL = 0x1C70 !
+[RTC]irqsta = 0x1, pdn1 = 0x0, pdn2 = 0x201, spar0 = 0x80, spar1 = 0x800
+[RTC]new_spare0 = 0x5E00, new_spare1 = 0x5001, new_spare2 = 0x1, new_spare3 = 0x1
+[RTC]bbpu = 0x1, con = 0x486, cali = 0x2541, osc32con = 0xDE75
+[PLFM] WDT reboot bypass power key!
+[PMIC]POWER_HOLD :0x1
+[RTC]rtc_lpsd_solution
+[RTC]1st RTC_AL_MASK= 0x7F 
+[RTC]2nd RTC_AL_MASK= 0x7F 
+[RTC]rtc_bbpu_power_on done
+pl chr:1 monitor:1 plchr:1 gain:1042
+[dramc] init partition address is 0x0000000000008000
+[dramc] init SRAM region for DRAM exception detection
+[dramc] LAST_DRAM_FATAL_ERR_FLAG = 0x0
+for cold boot, always return 0
+[RGU] rgu_update_reg: 0, bits: 0x400, addr: 0x10007040, val: 0x200F1
+[RGU] WDT DDR reserve mode FAIL! 200F1
+[RGU] DDR RESERVE Success 0
+[RGU] rgu_update_reg: 0, bits: 0x200, addr: 0x10007040, val: 0x200F1
+[RGU] rgu_update_reg: 0, bits: 0x100, addr: 0x10007040, val: 0x200F1
+[MT6357] 4 2,1
+[MT6357] 2 7,0
+[hl7593_enable] id =0, en =1, ret =1 
+[hl7593_set_voltage] id = 0, set_val = 1125000 
+[MT6357] 1 2,45
+[MT6357] get volt 2, 45, 800000
+Vcore = 800000
+[hl7593_read_interface] Reg[0]=0xD4
+[hl7593_read_interface] val=0x54
+[hl7593_get_voltage] id = 0, get_val = 1125000 
+Vdram = 1125000
+Vddq = 600000
+[EMI] mcp_dram_num:3,discrete_dram_num:1,enable_combo_dis:1
+[dramc] PL_VERSION is updated, erase the DRAM shu_data
+[MT6357] 1 2,25
+Read voltage for 800
+Vio18 = 1810000
+[MT6357] get volt 2, 25, 675000
+Vcore = 675000
+[hl7593_read_interface] Reg[0]=0xD4
+[hl7593_read_interface] val=0x54
+[hl7593_get_voltage] id = 0, get_val = 1125000 
+Vdram = 1125000
+Vddq = 600000
+eMMC cid: F4012241,524A3131,58103216,A91F1AB7
+[MDL]index:0, MR5:6, type:203, vender_id:0
+[MDL]index:1, MR5:1, type:203, vender_id:0
+[MDL]index:2, MR5:1, type:203, vender_id:0
+[MDL]index:3, MR5:FF, type:6, vender_id:0
+found:0,i:4
+[EMI] MDL number = -1
+[EMI] setting failed 0xFFFFFFFF
+<ASSERT> /media/hz1001/workspace/mtk_a13/mtk_android_13/vendor_android_12/vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt6761/src/drivers/emi.c:line 1732 0
+PL fatal error...
+mtk detect key function pmic_detect_homekey MTK_PMIC_RST_KEY = 17
+PL delay for Long Press Reboot
+[PLFM] emergency download mode(timeout: 5s).
+[RGU] mtk_arch_reset at pre-loader!
+[RGU] pmic do nothing
+[RGU] disable pwrap before WDT
+[RGU] mtk_wdt_reset WDT MODE=25
